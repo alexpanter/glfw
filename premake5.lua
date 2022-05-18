@@ -54,11 +54,8 @@ project "glfw"
 	   "src/xkb_unicode.c",
 	   "src/posix_time.c",
 	   "src/posix_thread.c",
-<<<<<<< HEAD
-=======
 	   "src/posix_module.c",
 	   "src/posix_poll.c",
->>>>>>> alex-changes
 	   "src/glx_context.c",
 	   "src/egl_context.c",
 	   "src/osmesa_context.c",
