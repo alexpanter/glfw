@@ -15,6 +15,11 @@ project "glfw"
 	 "src/init.c",
 	 "src/input.c",
 	 "src/monitor.c",
+	 "src/null_init.c",
+	 "src/null_joystick.c",
+	 "src/null_monitor.c",
+	 "src/null_window.c",
+	 "src/platform.c",
 	 "src/vulkan.c",
 	 "src/window.c"
   }
@@ -28,12 +33,12 @@ project "glfw"
        "-Wall",
        "-Werror",
        "-fvisibility=default", --internal-only linkage for building shared libraries
-	   "-fPIC"
+       "-fPIC"
     }
-	removebuildoptions
-	{
-	   "-Wdouble-promotion"
-	}
+    removebuildoptions
+    {
+      "-Wdouble-promotion"
+    }
 
   filter "toolset:clang"
 
@@ -49,6 +54,11 @@ project "glfw"
 	   "src/xkb_unicode.c",
 	   "src/posix_time.c",
 	   "src/posix_thread.c",
+<<<<<<< HEAD
+=======
+	   "src/posix_module.c",
+	   "src/posix_poll.c",
+>>>>>>> alex-changes
 	   "src/glx_context.c",
 	   "src/egl_context.c",
 	   "src/osmesa_context.c",
